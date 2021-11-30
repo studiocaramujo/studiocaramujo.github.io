@@ -10,3 +10,7 @@ plugins:   [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
 title:		   "Studio Caramujo"
 description: "Powered by Jekyll and GitHub Pages"
 author:      "Paul Le"
+
+sass:
+  sass_dir: _sass
+  style: compressed
