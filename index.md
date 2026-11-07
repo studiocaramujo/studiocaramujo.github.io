@@ -1,4 +1,0 @@
----
-layout: soon
-title: Home
----
