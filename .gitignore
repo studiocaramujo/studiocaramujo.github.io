@@ -1,3 +1,8 @@
 node_modules
 dist
+.vite
 .DS_Store
+# Sobras do tema Jekyll antigo
+_site
+.jekyll-cache
+Gemfile.lock
