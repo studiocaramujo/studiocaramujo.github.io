@@ -25,12 +25,12 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/portfolio/:slug" element={<Project />} />
-          <Route path="/process" element={<Process />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<section className="container page"><h1>Page not found</h1></section>} />
+          <Route path="/projetos" element={<Portfolio />} />
+          <Route path="/projetos/:slug" element={<Project />} />
+          <Route path="/processo" element={<Process />} />
+          <Route path="/quem-somos" element={<About />} />
+          <Route path="/contato" element={<Contact />} />
+          <Route path="*" element={<section className="container page"><h1>Página não encontrada</h1></section>} />
         </Routes>
       </main>
       <Footer />

@@ -1,20 +1,20 @@
 # Studio Caramujo
 
-Architecture office website (React + Vite), deployed to GitHub Pages.
+Site do Studio Caramujo (React + Vite), publicado no GitHub Pages.
 
-## Develop
+## Rodar localmente
 ```
 npm install
 npm run dev
 ```
 
-## Where to edit
-- `src/data/site.js` — office name, contact, form endpoint, about text
-- `src/data/projects.js` — portfolio projects (images go in `public/images/`)
-- `src/data/process.js` — the steps from briefing to execution
-- `src/styles.css` — color palette lives in the `:root` variables at the top
-- `public/logo.svg` — replace with the real logo
+## Onde editar
+- `src/data/site.js`: contatos, textos de "Quem somos", categorias da home, link do formulário de orçamento
+- `src/data/projects.js`: projetos do portfólio (imagens em `public/images/`)
+- `src/data/process.js`: etapas do briefing à entrega
+- `src/styles.css`: paleta e fontes nas variáveis `:root` no topo do arquivo
+- `public/logo.png`: logo
 
-## Deploy
-Push to `main`; the GitHub Actions workflow builds and publishes to Pages
+## Publicação
+Ao fazer push na `main`, o GitHub Actions gera o build e publica no Pages
 (Settings → Pages → Source: GitHub Actions).

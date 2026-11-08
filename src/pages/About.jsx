@@ -1,15 +1,18 @@
 import { site } from '../data/site.js'
+import Rich from '../components/Rich.jsx'
 
 export default function About() {
+  const a = site.architect
   return (
     <section className="container page">
-      <h1>About</h1>
-      {site.about.map((t, i) => <p key={i} className="lead">{t}</p>)}
-      <h2>Team</h2>
-      <div className="grid">
-        {site.team.map((m, i) => (
-          <div key={i}><div className="placeholder">Photo</div><h3>{m.name}</h3><p className="muted">{m.role}</p></div>
-        ))}
+      <h1>Quem somos</h1>
+      <div className="about">
+        <div>
+          {site.about.map((t, i) => <p key={i}><Rich text={t} /></p>)}
+          <h2>Prazer, {a.name}</h2>
+          <p>{a.bio}</p>
+        </div>
+        <img src={a.photo} alt={`${a.name}, ${a.role.toLowerCase()}`} width="434" height="600" />
       </div>
     </section>
   )
